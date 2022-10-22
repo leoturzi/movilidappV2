@@ -5,7 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var movimientosRouter = require('./routes/movimientosRoutes');
+var informesRouter = require('./routes/informesRoutes');
+var ayudaRouter = require('./routes/ayudaRoutes');
 
 var app = express();
 
@@ -21,7 +23,9 @@ app.use(require('method-override')('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/cargar_movimiento', movimientosRouter);
+app.use('/informes', informesRouter);
+app.use('/ayuda', ayudaRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
