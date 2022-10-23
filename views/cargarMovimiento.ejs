@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body>
+        <%- include('partials/header') %>
+        <main>
+            <section id="info-util">
+                <div class="container mt-4">
+                    <div class="">
+                        <h3 class="mx-2">Informacion util para el turno</h3>
+                        <p class="mx-2">
+                            En esta seccion se detallan los puntos que el
+                            turnero debe tener en cuenta durante el desarrollo
+                            del turno
+                        </p>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                </div>
+            </section>
+
+            <section id="ultimo-mov">
+                <div class="container my-4">
+                    <div class="dropdown text-center">
+                        <button
+                            class="btn btn-secondary dropdown-toggle px-5"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Movimiento
+                        </button>
+                        <ul
+                            class="dropdown-menu px-3"
+                            aria-labelledby="dropdownMenuButton1"
+                        >
+                            <li>
+                                <button
+                                    class="btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#form_abrir_movimiento"
+                                    aria-expanded="false"
+                                    aria-controls="form_abrir_movimiento"
+                                >
+                                    Abrir Movimiento
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="btn"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#form_cerrar_movimiento"
+                                    aria-expanded="false"
+                                    aria-controls="form_cerrar_movimiento"
+                                >
+                                    Cerrar Movimiento
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ABRIR MOVIMIENTO -->
+                <section
+                    id="form_abrir_movimiento"
+                    class="container mt-3 mb-3 collapse"
+                    data-bs-parent="#ultimo-mov"
+                >
+                    <h3 class="mx-2 text-center">Abrir Movimiento</h3>
+                    <form id="abrir_movimiento" class="border" novalidate>
+                        <div class="row my-3 px-3">
+                            <label
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                for="operador"
+                                >Operador</label
+                            >
+                            <div class="col-6">
+                                <select
+                                    class="form-select"
+                                    name="operador"
+                                    id="operador"
+                                    required
+                                >
+                                    <option
+                                        value=""
+                                        disabled="disabled"
+                                        selected
+                                    >
+                                        Seleccione
+                                    </option>
+                                    <option value="Angelino">Angelino</option>
+                                    <option value="Ceballos">Ceballos</option>
+                                    <option value="Gamboa">Gamboa</option>
+                                    <option value="Gonzales">Gonzales</option>
+                                    <option value="Herrera">Herrera</option>
+                                    <option value="Lezcano">Lezcano</option>
+                                    <option value="Lima">Lima</option>
+                                    <option value="Perez">Perez</option>
+                                    <option value="Ramos">Ramos</option>
+                                    <option value="Seco">Seco</option>
+                                    <option value="Turzi">Turzi</option>
+                                    <option value="Visentin">Visentin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                for="id_avion"
+                                >Avion</label
+                            >
+                            <div class="col-6">
+                                <select
+                                    class="form-select"
+                                    name="id_avion"
+                                    id="id_avion"
+                                    required
+                                >
+                                    <option
+                                        value=""
+                                        disabled="disabled"
+                                        selected
+                                    >
+                                        Seleccione
+                                    </option>
+                                    <option value="TC-32">TC-32</option>
+                                    <option value="TC-52">TC-52</option>
+                                    <option value="TC-53">TC-53</option>
+                                    <option value="TC-61">TC-61</option>
+                                    <option value="TC-66">TC-66</option>
+                                    <option value="TC-69">TC-69</option>
+                                    <option value="TC-70">TC-70</option>
+                                    <option value="TC-99">TC-99</option>
+                                    <option value="Helicoptero">
+                                        Helicoptero
+                                    </option>
+                                    <option value="Lear">Lear</option>
+                                    <option value="Pampa">Pampa</option>
+                                    <option value="Pucara">Pucara</option>
+                                    <option value="Saab">Saab</option>
+                                    <option value="Twin">Twin</option>
+                                    <option value="Tucano">Tucano</option>
+                                    <option value="Texan">Texan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                for="equipo"
+                                >Equipo</label
+                            >
+                            <div class="col-6">
+                                <select
+                                    class="form-select"
+                                    name="equipo"
+                                    id="equipo"
+                                    required
+                                >
+                                    <option
+                                        value=""
+                                        disabled="disabled"
+                                        selected
+                                    >
+                                        Seleccione
+                                    </option>
+                                    <option value="hobart-7">H-7</option>
+                                    <option value="hobart-9">H-9</option>
+                                    <option value="hobart-10">H-10</option>
+                                    <option value="hobart-11">H-11</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                for="fecha_colocacion"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Fecha Colocacion
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="fecha_colocacion"
+                                />
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                for="hora_colocacion"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Hora Colocacion
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="time"
+                                    class="form-control"
+                                    id="hora_colocacion"
+                                />
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                for="hora_equipo_ini"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Horas Equipo
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="hora_equipo_ini"
+                                />
+                            </div>
+                        </div>
+                        <!-- <div class="row my-3 px-3">
+                            <label for="fecha_retiro" class="col-6 col-form-label pe-0 fw-bold">Fecha Retiro </label>
+                            <div class="col-6"><input type="date" class="form-control" id="fecha_retiro"></div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label for="hora_retiro" class="col-6 col-form-label pe-0 fw-bold">Hora Retiro </label>
+                            <div class="col-6"><input type="time" class="form-control" id="hora_retiro"></div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label for="hora_equipo_fin" class="col-6 col-form-label pe-0 fw-bold">Horas Equipo </label>
+                            <div class="col-6"><input type="number" class="form-control" id="hora_equipo_fin"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="position-relative mt-5"><button id="ultimoMov" type="button" class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x">Ultimo movimiento</button></div>
+                        </div> -->
+                        <div class="row my-3">
+                            <div class="position-relative mt-5">
+                                <button
+                                    id="abrirMov"
+                                    type="submit"
+                                    class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x"
+                                >
+                                    Abrir movimiento
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- FIN ABRIR MOVIMIENTO -->
+
+                <!-- CERRAR MOVIMIENTO -->
+                <section
+                    id="form_cerrar_movimiento"
+                    class="container mt-3 mb-3 collapse"
+                    data-bs-parent="#ultimo-mov"
+                >
+                    <h3 class="mx-2 text-center">Cerrar Movimiento</h3>
+                    <form id="cerrar_movimiento" class="border" novalidate>
+                        <!-- <div class="row my-3 px-3">
+                            <label class="col-6 col-form-label pe-0 fw-bold" for="operador">Operador</label>
+                            <div class="col-6">
+                                <select class="form-select" name="operador" id="operador" required>
+                                    <option value="" disabled="disabled" selected>Seleccione</option>
+                                    <option value="Visentin">Angelino</option>
+                                    <option value="Ceballos">Ceballos</option>
+                                    <option value="Gamboa">Gamboa</option>
+                                    <option value="Gonzales">Gonzales</option>
+                                    <option value="Herrera">Herrera</option>
+                                    <option value="Lezcano">Lezcano</option>
+                                    <option value="Lima">Lima</option>
+                                    <option value="Perez">Perez</option>
+                                    <option value="Ramos">Ramos</option>
+                                    <option value="Seco">Seco</option>
+                                    <option value="Turzi">Turzi</option>
+                                    <option value="Visentin">Visentin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label class="col-6 col-form-label pe-0 fw-bold" for="id_avion">Avion</label>
+                            <div class="col-6">
+                                <select class="form-select" name="id_avion" id="id_avion" required>
+                                    <option value="" disabled="disabled" selected>Seleccione</option>
+                                    <option value="TC-32">TC-32</option>
+                                    <option value="TC-52">TC-52</option>
+                                    <option value="TC-53">TC-53</option>
+                                    <option value="TC-61">TC-61</option>
+                                    <option value="TC-66">TC-66</option>
+                                    <option value="TC-69">TC-69</option>
+                                    <option value="TC-70">TC-70</option>
+                                    <option value="TC-99">TC-99</option>
+                                    <option value="Helicoptero">Helicoptero</option>
+                                    <option value="Lear">Lear</option>
+                                    <option value="Pampa">Pampa</option>
+                                    <option value="Pucara">Pucara</option>
+                                    <option value="Saab">Saab</option>
+                                    <option value="Twin">Twin</option>
+                                    <option value="Tucano">Tucano</option>
+                                    <option value="Texan">Texan</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="row my-3 px-3">
+                            <label
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                for="equipo"
+                                >Equipo</label
+                            >
+                            <div class="col-6">
+                                <select
+                                    class="form-select"
+                                    name="equipo"
+                                    id="equipo"
+                                    required
+                                >
+                                    <option
+                                        value=""
+                                        disabled="disabled"
+                                        selected
+                                    >
+                                        Seleccione
+                                    </option>
+                                    <option value="hobart-7">H-7</option>
+                                    <option value="hobart-9">H-9</option>
+                                    <option value="hobart-10">H-10</option>
+                                    <option value="hobart-11">H-11</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="row my-3 px-3">
+                            <label for="fecha_colocacion" class="col-6 col-form-label pe-0 fw-bold">Fecha Colocacion </label>
+                            <div class="col-6"><input type="date" class="form-control" id="fecha_colocacion"></div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label for="hora_colocacion" class="col-6 col-form-label pe-0 fw-bold">Hora Colocacion </label>
+                            <div class="col-6"><input type="time" class="form-control" id="hora_colocacion"></div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label for="hora_equipo_ini" class="col-6 col-form-label pe-0 fw-bold">Horas Equipo </label>
+                            <div class="col-6"><input type="number" class="form-control" id="hora_equipo_ini"></div>
+                        </div> -->
+                        <div class="row my-3 px-3">
+                            <label
+                                for="fecha_retiro"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Fecha Retiro
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="fecha_retiro"
+                                />
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                for="hora_retiro"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Hora Retiro
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="time"
+                                    class="form-control"
+                                    id="hora_retiro"
+                                />
+                            </div>
+                        </div>
+                        <div class="row my-3 px-3">
+                            <label
+                                for="hora_equipo_fin"
+                                class="col-6 col-form-label pe-0 fw-bold"
+                                >Horas Equipo
+                            </label>
+                            <div class="col-6">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="hora_equipo_fin"
+                                />
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="position-relative mt-5">
+                                <button
+                                    id="ultimoMov"
+                                    type="button"
+                                    class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x"
+                                >
+                                    Ultimo movimiento
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="position-relative mt-5">
+                                <button
+                                    id="cerrarMov"
+                                    type="submit"
+                                    class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x"
+                                >
+                                    Cerrar movimiento
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- FIN CERRAR MOVIMIENTO -->
+            </section>
+        </main>
+        <%- include('partials/footer') %>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,11 +1,211 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body>
+        <%- include('partials/header') %>
+        <main>
+            <section id="info-util">
+                <div class="container mt-4">
+                    <div class="">
+                        <h3 class="mx-2">Informacion util para el turno</h3>
+                        <p class="mx-2">
+                            En esta seccion se detallan los puntos que el
+                            turnero debe tener en cuenta durante el desarrollo
+                            del turno
+                        </p>
+                        <ul>
+                            <li>Medir Nivel de combustible</li>
+                            <li>Medir Nivel de aceite</li>
+                            <li>Anotar Novedades</li>
+                            <li>Anotar Horas de equipos</li>
+                            <li>Entregar llaves</li>
+                            <li>
+                                Internos Utiles:
+                                <ul>
+                                    <li>
+                                        Turno Tecnico:
+                                        <span class="fw-bold">21-221</span>
+                                    </li>
+                                    <li>
+                                        Turno Operaciones:
+                                        <span class="fw-bold">21-205</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN INFORMACION DEL TURNO -->
+            <!-- TURNOS DEL MES -->
+            <section id="turnos">
+                <div class="container mt-4">
+                    <div class="">
+                        <h3 class="mx-2">Turnos Octubre</h3>
+                        <p class="mx-2">
+                            En esta seccion se detallan los turnos a cumplirse
+                            durante Octubre
+                        </p>
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Dia</th>
+                                    <th scope="col">Turnero</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lunes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Martes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Miercoles</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Jueves</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Viernes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>6</td>
+                                    <td>Sabado</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>7</td>
+                                    <td>Domingo</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Lunes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Martes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Miercoles</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Jueves</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Viernes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>13</td>
+                                    <td>Sabado</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>14</td>
+                                    <td>Domingo</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Lunes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Martes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Miercoles</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Jueves</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Viernes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>20</td>
+                                    <td>Sabado</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>21</td>
+                                    <td>Domingo</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>Lunes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>Martes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>Miercoles</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>Jueves</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>Viernes</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>27</td>
+                                    <td>Sabado</td>
+                                    <td>Turzi</td>
+                                </tr>
+                                <tr class="finde">
+                                    <td>28</td>
+                                    <td>Domingo</td>
+                                    <td>Turzi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('partials/footer') %>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
