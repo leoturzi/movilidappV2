@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const mainController = require('../controllers/mainController');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('main', { title: 'Express' });
-});
+router.get('/', mainController.showHome);
+
+router.get('/main', mainController.showHome);
 
 module.exports = router;
